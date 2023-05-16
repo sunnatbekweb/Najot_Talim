@@ -126,8 +126,8 @@ header .nav img {
   font-weight: 700;
   font-size: 40px;
   line-height: 56px;
-  display: flex;
-  align-items: center;
+  letter-spacing: -0.8px;
+  color: #000;
 }
 #intro h1 span {
   color: #BA8D5B;
