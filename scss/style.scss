@@ -347,6 +347,7 @@ header {
         line-height: 19px;
         color: #0EB182;
         text-decoration: none;
+        transition: all 0.5s ease;
     }
 
 }
@@ -363,6 +364,7 @@ header {
         font-size: 32px;
         line-height: 40px;
         color: #0F1826;
+        margin-bottom: 24px;
     }
 
     & p {
@@ -398,6 +400,7 @@ header {
             -webkit-filter: grayscale(0);
             filter: grayscale(0);
             transition: all 0.5s ease;
+            cursor: pointer;
         }
 
     }
@@ -502,6 +505,7 @@ header {
         background: #FFFFFF;
         border-radius: 100px;
         padding: 6px;
+        transition: all 0.5s ease;
 
         .video_link {
             font-family: 'Lato Bold';
@@ -747,6 +751,7 @@ footer {
             line-height: 32px;
             letter-spacing: -0.28px;
             color: #607987;
+            transition: all 0.5s ease;
         }
 
     }
@@ -793,6 +798,7 @@ footer {
             letter-spacing: -0.28px;
             color: #607987;
             text-decoration: none;
+            transition: all 0.5s ease;
         }
 
         .raqam {
@@ -813,4 +819,8 @@ footer {
 
 .btn_white:hover {
     border: 1px solid #BD8F5B;
+}
+
+a:hover {
+    text-decoration: underline !important;
 }

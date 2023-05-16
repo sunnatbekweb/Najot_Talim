@@ -301,6 +301,7 @@ header .nav img {
   line-height: 19px;
   color: #0EB182;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 #workplace {
@@ -315,6 +316,7 @@ header .nav img {
   font-size: 32px;
   line-height: 40px;
   color: #0F1826;
+  margin-bottom: 24px;
 }
 #workplace p {
   font-family: "Lato SemiBold";
@@ -346,6 +348,7 @@ header .nav img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 #comments {
@@ -439,6 +442,7 @@ header .nav img {
   background: #FFFFFF;
   border-radius: 100px;
   padding: 6px;
+  transition: all 0.5s ease;
 }
 #comments .watch .video_link,
 #comments a .video_link {
@@ -647,6 +651,7 @@ footer .footer_card a {
   line-height: 32px;
   letter-spacing: -0.28px;
   color: #607987;
+  transition: all 0.5s ease;
 }
 footer hr {
   margin-left: 265px;
@@ -686,6 +691,7 @@ footer .footer_card_bottom p {
   letter-spacing: -0.28px;
   color: #607987;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 footer .footer_card_bottom .raqam {
   font-family: "Lato Medium";
@@ -699,4 +705,8 @@ footer .footer_card_bottom .raqam {
 
 .btn_white:hover {
   border: 1px solid #BD8F5B;
+}
+
+a:hover {
+  text-decoration: underline !important;
 }/*# sourceMappingURL=style.css.map */
