@@ -47,6 +47,10 @@ header {
   width: 100%;
   background: #F1F0EE;
   padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 header .nav {
   display: flex;
@@ -87,7 +91,7 @@ header .nav__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  border: none;
+  border: 1px solid #FFFFFF;
   cursor: pointer;
 }
 header .nav button:hover {
@@ -102,7 +106,7 @@ header .nav img {
 #intro {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 90px auto 0 auto;
   align-items: center;
   width: 100%;
   height: 504px;
@@ -145,7 +149,7 @@ header .nav img {
   padding: 13px 47.8px 13px 46px;
   background: #BA8D5B;
   border-radius: 100px;
-  border: none;
+  border: 1px solid #FFFFFF;
   font-family: "Lato Bold";
   font-style: normal;
   font-weight: 700;
@@ -588,7 +592,7 @@ header .nav img {
   padding: 13px 129.16px 13px 128.84px;
   background: #BA8D5B;
   border-radius: 100px;
-  border: none;
+  border: 1px solid #FFFFFF;
   font-family: "Lato Bold";
   font-style: normal;
   font-weight: 700;
@@ -704,9 +708,302 @@ footer .footer_card_bottom .raqam {
 }
 
 .btn_white:hover {
-  border: 1px solid #BD8F5B;
+  border: 1px solid #BD8F5B !important;
+  background: transparent !important;
+  color: #000000 !important;
+}
+
+.btn_white:active {
+  background: #BD8F5B;
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
 a:hover {
   text-decoration: underline !important;
+}
+
+#all_courses {
+  margin-top: 165px;
+}
+#all_courses .road {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 64px 0;
+}
+#all_courses .road .back {
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C4C4C4;
+}
+#all_courses .road .courses {
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #BA8D5B;
+}
+#all_courses .title_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+#all_courses .title_input h1 {
+  font-family: "Lato Hard";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 56px;
+  letter-spacing: -0.64px;
+  color: #0F1826;
+}
+#all_courses .title_input .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F7F7F5;
+  border-radius: 100px;
+  padding: 15px;
+  gap: 150px;
+}
+#all_courses .title_input .search input {
+  border: none;
+  background: #F7F7F5;
+}
+#all_courses .btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 72px;
+}
+#all_courses .btns button {
+  padding: 16px 25.05px 16px;
+  background: #F7F7F5;
+  border-radius: 32px;
+  border: 1px solid #F7F7F5;
+  cursor: pointer;
+  font-family: "Lato SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+#all_courses .courses_wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+  padding: 0 31px 32px 0;
+  margin-bottom: 16px;
+}
+#all_courses .courses_wrapper1 .courses_card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 29px;
+  width: 543.5px;
+  height: 314px;
+  background: #F9F8F7;
+  border-radius: 4px;
+  padding: 24px;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card-top .category {
+  padding: 5px 12.91px 5px 12px;
+  background: #D1D1D1;
+  border-radius: 4px;
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card-top p {
+  font-family: "Lato Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #b1732b;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card-top p span {
+  color: #BA8D5B;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card_bottom h2 {
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.56px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+#all_courses .courses_wrapper1 .courses_card1 .courses_card_bottom p {
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.28px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#blog {
+  margin-top: 164px;
+}
+#blog .road {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 32px 0;
+}
+#blog .road .back {
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C4C4C4;
+}
+#blog .road .courses {
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #BA8D5B;
+}
+#blog .btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+#blog .btns button {
+  padding: 16px 25.05px 16px;
+  background: #F7F7F5;
+  border-radius: 32px;
+  border: 1px solid #F7F7F5;
+  cursor: pointer;
+  font-family: "Lato SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+#blog .blog_wrapper {
+  margin: 0 0 0 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 342.8px);
+  grid-template-rows: repeat(2, 329px);
+  gap: 48px;
+}
+#blog .blog_wrapper .blog_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 26px;
+  width: 342.8px;
+  height: fit-content;
+}
+#blog .blog_wrapper .blog_card .header {
+  width: 342.33px;
+  height: 182px;
+  position: relative;
+}
+#blog .blog_wrapper .blog_card .header a {
+  text-decoration: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px 14.2px 5px 12px;
+  background: #FAFAFA;
+  box-shadow: 0px 0px 2px #000000;
+  border-radius: 4px;
+  left: 8px;
+  top: 8px;
+  font-family: "Lato SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+#blog .blog_wrapper .blog_card .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+}
+#blog .blog_wrapper .blog_card .body h2 {
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+#blog .blog_wrapper .blog_card .body p {
+  font-family: "Lato Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#blog .blog_wrapper .blog_card .body .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 342.8px;
+}
+#blog .blog_wrapper .blog_card .body .date .watched {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+#blog button {
+  display: flex;
+  justify-content: center;
+  padding: 13px 47.3px 13px 46px;
+  background: #BA8D5B;
+  border-radius: 100px;
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 48px auto;
+  border: 1px solid #BD8F5B;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
